@@ -2,6 +2,7 @@ package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
@@ -21,7 +22,9 @@ class ButtonActivity : AppCompatActivity() {
         bottoneFalso.setOnClickListener{
 
             view:View->//fai qualcosa
-            Toast.makeText(this,R.string.non_corretto,Toast.LENGTH_LONG).show()
+            val toast=Toast.makeText(this,R.string.non_corretto,Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.TOP,0,0)
+            toast.show()
         }
 
 
