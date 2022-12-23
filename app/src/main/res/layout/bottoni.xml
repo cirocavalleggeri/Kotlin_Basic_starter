@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/id_linear_orizzontale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bordo_giallo"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_btn_vero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bordo"
+            android:text="@string/vero" />
+
+        <Button
+            android:id="@+id/id_btn_falso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bordo"
+            android:text="@string/falso" />
+    </LinearLayout>

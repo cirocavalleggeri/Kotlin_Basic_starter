@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentActivity">
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_framelayout"
+        >
+        <TextView
+            android:id="@+id/tx_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:contentDescription="Capitolo 8 "
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Qui iniziamo il progetto CriminalIntent sfruttando i fragment" />
+    </FrameLayout>
+<TextView
+    style="?android:listSeparatorTextViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/crime_title_label"
+    >
+
+</TextView>
+<EditText
+    android:id="@+id/crime_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/title_hint_crime">
+
+</EditText>
+    <TextView
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crime_details_label"
+        >
+
+    </TextView>
+  <Button
+      android:id="@+id/crime_date"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      tools:text="Wed Dic 22 11:23 est 2022">
+</Button>
+
+    <CheckBox
+        android:id="@+id/crime_solved"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crimine_risolto">
+
+    </CheckBox>
+
+</LinearLayout>

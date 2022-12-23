@@ -37,6 +37,7 @@ class AndroidBasicsStarter : ListActivity() {
                 .forName("org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.$testName")
             val intent = Intent(this, clazz)
             startActivity(intent)
+            finish()
         } catch (e: ClassNotFoundException) {
             e.printStackTrace()
         }
