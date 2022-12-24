@@ -12,7 +12,7 @@ import android.widget.ListView
 import android.widget.Toast
 
 class AndroidBasicsStarter : ListActivity() {
-    var tests = arrayOf("MainActivity","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent"
+    var tests = arrayOf("MainActivity","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent","RecyclerView"
 
     )
 
@@ -37,7 +37,7 @@ class AndroidBasicsStarter : ListActivity() {
                 .forName("org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.$testName")
             val intent = Intent(this, clazz)
             startActivity(intent)
-            finish()
+            //finish()
         } catch (e: ClassNotFoundException) {
             e.printStackTrace()
         }
