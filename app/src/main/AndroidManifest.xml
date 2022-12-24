@@ -11,9 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CriminalIntent"
-           android:label="Criminal Intent"
+        <activity android:name=".RecyclerView"
+            android:label="Capitolo 9 RecyclerView"
             ></activity>
+        <activity
+            android:name=".CriminalIntent"
+            android:label="capitolo 8 i Fragment" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".ModelViewActivity" />
         <activity android:name=".ButtonActivity" />
