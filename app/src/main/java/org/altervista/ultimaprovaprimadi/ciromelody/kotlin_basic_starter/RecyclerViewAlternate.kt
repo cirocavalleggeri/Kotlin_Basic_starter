@@ -28,22 +28,16 @@ class RecyclerViewAlternate : AppCompatActivity() {
                 this,
                 layoutManager.orientation
             ))
-      /* adapter = CategorieAdapter()
+       adapter = CategorieAdapter()
         adapter?.setItems(listOf(Categories("capelli","sciarpe"),Categories("capelli","sciarpe"),
             Articles("lavacapelli","arricciacapelli","lavacapelli"),
             Categories("capelli","sciarpe"),
             Articles("lavacapelli","arricciacapelli","lavacapelli"))
         )
-       mrecyclerView.adapter=adapter*/
+       mrecyclerView.adapter=adapter
 
 
-        //originale
-        mrecyclerView.adapter = CategorieAdapter()
-        adapter?.setItems(listOf(Categories("capelli","sciarpe"),Categories("capelli","sciarpe"),
-            Articles("lavacapelli","arricciacapelli","lavacapelli"),
-            Categories("capelli","sciarpe"),
-            Articles("lavacapelli","arricciacapelli","lavacapelli")))
-        //fine originale
+
     }
 }
 

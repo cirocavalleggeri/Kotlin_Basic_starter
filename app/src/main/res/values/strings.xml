@@ -9,4 +9,9 @@
     <string name="crime_title_label">Title</string>
     <string name="crime_details_label">Details</string>
     <string name="crimine_risolto">Crimine risolto</string>
+    <string name="recyclerview_spiegazione">recyclerview si affida a CrimeListFragment per visualizzare la classe oggetti crime</string>
+    <string name="recycler_view_alternate_spiegazione">L\'adapter CategorieAdapter nella cartella adattatori permette di visualizzaere due tipi di classi completamente diverse fra loro ,con diversi layout esempio preso da stackoverflow https://stackoverflow.com/questions/67880979/android-recycleview-multiple-viewtypes-not-working-in-kotlin</string>
+    <string name="aggiungere_un_bottone_spiegazione">Esercizio finale del capitolo 9 aggiungere una proprietà requiresPolice che se è vera aggiungere un bottone.Questo
+    lo si fà facendo override della funzione getItemViewType e estrapolando da  essa due valori 0 e 1.In base a questi due valori si deciderà
+    di creare il rispettivo holder e associarvi il layout giusto</string>
 </resources>

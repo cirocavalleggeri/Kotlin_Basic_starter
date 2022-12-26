@@ -11,9 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RecyclerView"
-            android:label="Capitolo 9 RecyclerView"
-            ></activity>
+        <activity
+            android:label="RecyclerView alternate, sfida a capitolo 9 "
+            android:name=".RecyclerViewAlternateSerious"></activity>
+
+        <activity
+            android:name=".RecyclerViewAlternate"
+            android:label="RecyclerView con due item di classi diverse" />
+        <activity
+            android:name=".RecyclerView"
+            android:label="Capitolo 9 RecyclerView" />
         <activity
             android:name=".CriminalIntent"
             android:label="capitolo 8 i Fragment" />

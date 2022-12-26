@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecyclerView">
-
+    android:orientation="vertical"
+    tools:context=".RecyclerViewAlternateSerious">
     <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/aggiungere_un_bottone_spiegazione"
 
-        android:layout_height="70dp"
-        android:text="@string/recyclerview_spiegazione"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </TextView>
-
+        ></TextView>
     <include
         layout="@layout/fragment_container"
         android:layout_width="408dp"
@@ -24,4 +21,5 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"></include>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
