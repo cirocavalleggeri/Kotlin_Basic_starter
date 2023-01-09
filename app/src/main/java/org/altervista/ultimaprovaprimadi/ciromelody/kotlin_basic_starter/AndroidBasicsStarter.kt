@@ -13,7 +13,7 @@ import android.widget.Toast
 
 class AndroidBasicsStarter : ListActivity() {
     var tests = arrayOf("MainActivity","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent","RecyclerView"
-                              ,"RecyclerViewAlternate","RecyclerViewAlternateSerious","ConstraintLayout"
+                              ,"RecyclerViewAlternate","RecyclerViewAlternateSerious","ConstraintLayout","RoomDatabase"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {

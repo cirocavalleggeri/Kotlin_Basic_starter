@@ -7,13 +7,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Big Nerd 4 edizione"
+        android:name=".roomdatabase.CriminalIntentApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RoomDatabase"
+            android:label="RoomDatabase cap 11"
+            ></activity>
         <activity
-            android:label="Cap.10 ConstraintLayout"
-            android:name=".ConstraintLayout"></activity>
+            android:name=".ConstraintLayout"
+            android:label="Cap.10 ConstraintLayout" />
         <activity
             android:name=".RecyclerViewAlternateSerious"
             android:label="RecyclerView alternate, sfida a capitolo 9 " />

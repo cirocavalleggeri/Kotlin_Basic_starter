@@ -16,4 +16,21 @@
     di creare il rispettivo holder e associarvi il layout giusto</string>
     <string name="recyclerview_spiegazione_cap_10">In questo capitolo 10 si introduce  il constraintLayout,sottolinenado il fatto che è molto più performante.l adattatore della recycler view è presente nell fragment CrimeListCap10
      In questo capitolo è stata introdotta un immagine che comparirà solo se il crimine è stato risolto</string>
+    <string name="recyclerview_spiegazione_cap_11">In questo capitolo ,si introduce il room database uno strumento in grado di memorizzare i dati in tabella in maniera persistente,fino a chè non si disinstalla l\'applicazione
+    La prima cosa da fare è aggiungere nel file app/build.gradle la dicitura apply plugin:<b> kotlin-kapt </b> e nelle dipendanze
+     il compilatore di room
+       <b>  implementation "androidx.room:room-runtime:2.2.5"
+            kapt "androidx.room:room-compiler:2.2.5"</b>
+        con <b>la annotazione @Entity </b>dichiariamo una classe-tabella con l\'annotazione <b>@Primarykey</b>dichiariamo la chiave primaria
+        //entities è una lista di tabelle in questo caso una,version è la versione del database
+        //questo cambia quando si modifica una tabella
+        @Database(entities = [Crime::class], version = 1)
+         //l\'annotazione <b>TypeConverters</b> serve per dire come convertire i dati da e verso il database
+        @TypeConverters(CrimeTypeConverters::class)
+       abstract class CrimeDatabase : RoomDatabase() {
+        //CrimeDao fornisce le istruzioni SQL per operare sulle tabelle
+       abstract fun crimeDao(): CrimeDao
+         }
+
+    </string>
 </resources>

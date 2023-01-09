@@ -26,9 +26,9 @@ import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.Utility
 
 
-private const val TAG="CrimeListFragmentCap10"
+private const val TAG="CrimeListFragmentCap11"
 
-class CrimeListFragmentCap10: Fragment() {
+class CrimeListFragmentCap11: Fragment() {
 private lateinit var crimeRecyclerView: RecyclerView
 private var adapter: CrimeAdapter? = null
 private lateinit var mostraToast: Utility
@@ -114,8 +114,8 @@ private lateinit var mostraToast: Utility
 
     }
     companion object{
-        fun newInstance():CrimeListFragmentCap10{
-            return CrimeListFragmentCap10()
+        fun newInstance():CrimeListFragmentCap11{
+            return CrimeListFragmentCap11()
                     }
     }
 }

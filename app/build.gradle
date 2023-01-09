@@ -1,7 +1,9 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-parcelize'
 apply plugin: 'kotlin-android-extensions'
-
+//per room database
+apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 32
     buildToolsVersion "31.0.0"
@@ -41,5 +43,9 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     //RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //room database
+    implementation "androidx.room:room-runtime:2.2.5"
+    kapt "androidx.room:room-compiler:2.2.5"
+
 
 }
