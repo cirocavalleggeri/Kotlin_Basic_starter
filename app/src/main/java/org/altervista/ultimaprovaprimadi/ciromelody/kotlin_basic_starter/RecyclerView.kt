@@ -3,7 +3,7 @@ package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.CrimeFragment
-import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.CrimeListFragment
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.fragments.CrimeListFragment
 
 class RecyclerView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

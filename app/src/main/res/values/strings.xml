@@ -14,4 +14,6 @@
     <string name="aggiungere_un_bottone_spiegazione">Esercizio finale del capitolo 9 aggiungere una proprietà requiresPolice che se è vera aggiungere un bottone.Questo
     lo si fà facendo override della funzione getItemViewType e estrapolando da  essa due valori 0 e 1.In base a questi due valori si deciderà
     di creare il rispettivo holder e associarvi il layout giusto</string>
+    <string name="recyclerview_spiegazione_cap_10">In questo capitolo 10 si introduce  il constraintLayout,sottolinenado il fatto che è molto più performante.l adattatore della recycler view è presente nell fragment CrimeListCap10
+     In questo capitolo è stata introdotta un immagine che comparirà solo se il crimine è stato risolto</string>
 </resources>

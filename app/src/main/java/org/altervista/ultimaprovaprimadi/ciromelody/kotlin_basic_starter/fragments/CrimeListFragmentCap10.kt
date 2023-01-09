@@ -1,4 +1,4 @@
-package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi
+package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.fragments
 
 
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.View.inflate
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.Toast.makeText
@@ -19,16 +20,20 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.fragment_crime_list.*
 import kotlinx.android.synthetic.main.fragment_crime_list.view.*
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.ConstraintLayout
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.R
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.Crime
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.CrimeListViewModel
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.Utility
 
 
-private const val TAG="CrimeListFragment"
+private const val TAG="CrimeListFragmentCap10"
 
-class CrimeListFragment: Fragment() {
+class CrimeListFragmentCap10: Fragment() {
 private lateinit var crimeRecyclerView: RecyclerView
 private var adapter: CrimeAdapter? = null
-private lateinit var mostraToast:Utility
-    val crimeListViewModel:CrimeListViewModel by lazy { ViewModelProviders.of(this).get(CrimeListViewModel::class.java) }
+private lateinit var mostraToast: Utility
+    val crimeListViewModel: CrimeListViewModel by lazy { ViewModelProviders.of(this).get(CrimeListViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,18 +63,24 @@ private lateinit var mostraToast:Utility
     private inner class  CrimeHolder(view:View):RecyclerView.ViewHolder(view),View.OnClickListener{
 
 
-        lateinit var crime:Crime
+        lateinit var crime: Crime
 
         fun bind(crime: Crime) {
             this.crime=crime
             titleTextView.text=crime.title
             dateTextView.text=crime.date.toString()
+
+             manette.visibility=if(crime.isSolved){View.GONE}else{View.VISIBLE}
+                Log.d(TAG,"manette "+crime.isSolved)
+
+
             Log.d(TAG,"CrimeHolder->"+crime.title)
         }
 
         val titleTextView:TextView=itemView.findViewById(R.id.crime_title)
-          val dateTextView:TextView=itemView.findViewById(R.id.crime_date
-          )
+         val dateTextView:TextView=itemView.findViewById(R.id.crime_date    )
+         val  manette:ImageView=itemView.findViewById(R.id.id_imageView2)
+
 
         init {
             itemView.setOnClickListener(this)
@@ -104,8 +115,8 @@ private lateinit var mostraToast:Utility
 
     }
     companion object{
-        fun newInstance():CrimeListFragment{
-            return CrimeListFragment()
+        fun newInstance():CrimeListFragmentCap10{
+            return CrimeListFragmentCap10()
                     }
     }
 }

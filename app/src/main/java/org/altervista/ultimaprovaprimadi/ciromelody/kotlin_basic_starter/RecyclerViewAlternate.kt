@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.adattatori.Articles
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.adattatori.CategorieAdapter
 import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.adattatori.Categories
-import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.classi.CrimeListFragment
+import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.fragments.CrimeListFragment
 
 class RecyclerViewAlternate : AppCompatActivity() {
 

@@ -12,9 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="RecyclerView alternate, sfida a capitolo 9 "
-            android:name=".RecyclerViewAlternateSerious"></activity>
-
+            android:label="Cap.10 ConstraintLayout"
+            android:name=".ConstraintLayout"></activity>
+        <activity
+            android:name=".RecyclerViewAlternateSerious"
+            android:label="RecyclerView alternate, sfida a capitolo 9 " />
         <activity
             android:name=".RecyclerViewAlternate"
             android:label="RecyclerView con due item di classi diverse" />
