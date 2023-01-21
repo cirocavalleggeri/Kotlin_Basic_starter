@@ -1,7 +1,5 @@
-package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.roomdatabase
-
+package org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo11.criminalintent
 import android.app.Application
-import org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.roomdatabase.CrimeRepository
 import java.time.LocalDateTime
 import java.time.ZoneId
 import java.time.ZoneOffset

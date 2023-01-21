@@ -13,7 +13,9 @@ import android.widget.Toast
 
 class AndroidBasicsStarter : ListActivity() {
     var tests = arrayOf("MainActivity","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent","RecyclerView"
-                              ,"RecyclerViewAlternate","RecyclerViewAlternateSerious","ConstraintLayout","RoomDatabase"
+                              ,"RecyclerViewAlternate","RecyclerViewAlternateSerious","ConstraintLayout","RoomDatabase",
+        "RoomDatabaseCap12","capitolo10.criminalintent.MainActivity","capitolo11.criminalintent.MainActivity","capitolo12.MainActivity",
+        "capitolo13.MainActivity"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
