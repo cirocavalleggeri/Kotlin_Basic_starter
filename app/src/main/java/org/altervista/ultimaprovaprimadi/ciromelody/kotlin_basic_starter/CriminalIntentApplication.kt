@@ -19,6 +19,7 @@ class CriminalIntentApplication : Application() {
         org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo13.CrimeRepository.initialize(this)
         org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo14.CrimeRepository.initialize(this)
         org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo15.CrimeRepository.initialize(this)
+        org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo16.CrimeRepository.initialize(this)
 
     }
 }

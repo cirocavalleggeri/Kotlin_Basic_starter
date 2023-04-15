@@ -12,10 +12,10 @@ import android.widget.ListView
 import android.widget.Toast
 
 class AndroidBasicsStarter : ListActivity() {
-    var tests = arrayOf("MainActivity","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent","RecyclerView"
+    var tests = arrayOf("MainActivity","geoquiz.Two_button_GeoQuiz","capitolo2.Android_and_ModelView_Controller_capitolo_2","capitolo4.Capitolo_4","capitolo5.Capitolo_5","capitolo6.Capitolo_6","ButtonActivity","ModelViewActivity","Fragment","CriminalIntent","RecyclerView"
                               ,"RecyclerViewAlternate","RecyclerViewAlternateSerious","ConstraintLayout","RoomDatabase",
         "RoomDatabaseCap12","capitolo10.criminalintent.MainActivity","capitolo11.criminalintent.MainActivity","capitolo12.MainActivity",
-        "capitolo13.MainActivity","capitolo14.MainActivity","capitolo15.MainActivity"
+        "capitolo13.MainActivity","capitolo14.MainActivity","capitolo15.MainActivity","capitolo16.MainActivity"
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,9 +37,15 @@ class AndroidBasicsStarter : ListActivity() {
         try {
             val clazz = Class
                 .forName("org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.$testName")
+
             val intent = Intent(this, clazz)
+            intent.putExtra("Username","John Doe")
+            intent.putExtra("Orientamento","Landscape")
+            var b = Bundle()
+            b.putBoolean("isActive", true)
+            intent.putExtras(b)
             startActivity(intent)
-                    finish()
+                  //  finish()
         } catch (e: ClassNotFoundException) {
             e.printStackTrace()
         }

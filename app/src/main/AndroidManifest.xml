@@ -5,16 +5,33 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".CriminalIntentApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Big Nerd 4 edizione"
-        android:name=".roomdatabase.CriminalIntentApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RoomDatabase"
-            android:label="RoomDatabase cap 11"
-            ></activity>
+        <activity android:name=".capitolo16.MainActivity"></activity>
+        <activity
+            android:name=".capitolo15.MainActivity"
+            android:label="Capitolo 15 implicit intent"></activity>
+        <activity
+            android:name=".capitolo14.MainActivity"
+            android:label="Capitolo 14 -Toolbar" />
+        <activity
+            android:name=".capitolo13.MainActivity"
+            android:label="Capitolo 13 -Dialogs" />
+        <activity
+            android:name=".capitolo10.criminalintent.MainActivity"
+            android:label="Capitolo 10 RecyclerView" />
+        <activity
+            android:name=".capitolo11.criminalintent.MainActivity"
+            android:label="Capitolo 11 RoomDatabase" />
+        <activity android:name=".RoomDatabaseCap12" />
+        <activity
+            android:name=".RoomDatabase"
+            android:label="RoomDatabase cap 11" />
         <activity
             android:name=".ConstraintLayout"
             android:label="Cap.10 ConstraintLayout" />
@@ -30,10 +47,26 @@
         <activity
             android:name=".CriminalIntent"
             android:label="capitolo 8 i Fragment" />
+        <activity
+            android:name=".geoquiz.Two_button_GeoQuiz"
+            android:label="capitolo 1 geoquiz" />
+        <activity
+            android:name=".capitolo2.Android_and_ModelView_Controller_capitolo_2"
+            android:label="capitolo 2 " />
+        <activity
+            android:name=".capitolo4.Capitolo_4"
+            android:label="capitolo 4 " />
+        <activity
+            android:name=".capitolo5.Capitolo_5"
+            android:label="capitolo 5 " />
+        <activity
+            android:name=".capitolo6.Capitolo_6"
+            android:label="capitolo 6 " />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".ModelViewActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".MainActivity" />
+        <activity android:name=".capitolo12.MainActivity" />
         <activity android:name=".AndroidBasicsStarter">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +74,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="org.altervista.ultimaprovaprimadi.ciromelody.kotlin_basic_starter.capitolo16.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/files"/>
+        </provider>
     </application>
 
 </manifest>
